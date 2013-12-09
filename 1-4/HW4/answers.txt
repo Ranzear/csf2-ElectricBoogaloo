@@ -1,0 +1,52 @@
+Name: Royce Jensen
+Evergreen Login: jenroy30
+Computer Science Foundations
+Programming as a Way of Life
+Fall 2013
+Homework 3 
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+
+GC-content: 0.43029262963
+
+Problem 3:
+
+linenum and seq are now undefined, and this throws an error at the beginning of 
+the loop. Commenting out gc_count = 0 would let the entire loop run, and then 
+throw the undefined error after processing is done, wasting the computation.
+
+Problem 4:
+
+GC-content: 0.43029262963
+AT-content: 0.568993851852
+
+Collaboration:
+
+http://en.wikipedia.org/wiki/FASTQ_format
+http://docs.python.org/2/library/functions.html#enumerate
+
+Reflection:
+
+At one point my solution only counted valid pairs and Problem 4's outputs were 
+slightly different. Apparently there are some invalid (not A, T, G, or C) pairs 
+snuck in sample_1.fastq. String.rstrip() is rather neat and helps retain those 
+invalids without handling newline characters, so I reapplied it. I implemented
+a handy-dandy boolean for whether to count invalids or not.
+
+Also, twelve seconds to count both categories versus fifty seconds for just one.
+
+Massive strings result in massive overhead. Process on the fly and, potentially,
+in parallel instead. Also, understand your inputs; even wikipedia can tell you
+enough about a format to parse it on its own terms.

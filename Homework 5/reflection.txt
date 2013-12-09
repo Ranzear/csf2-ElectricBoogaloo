@@ -1,0 +1,14 @@
+Name: Royce Jensen
+Evergreen Login: jenroy30
+Programming as a Way of Life
+Homework 5: Election prediction
+
+
+Collaboration:
+
+Nobody!
+
+Reflection:
+
+Don't try to implement metastatistical functions like error trending over time
+per pollster! For some reason it angers github!

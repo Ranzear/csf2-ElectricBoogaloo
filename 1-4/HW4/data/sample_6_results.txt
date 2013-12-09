@@ -1,0 +1,11 @@
+GC-content: 0.491518518519
+AT-content: 0.508111111111
+G count: 7304
+C count: 5967
+A count: 6867
+T count: 6852
+Sum count: 26990
+Total count: 27000
+seq length: 27000
+AT/GC Ratio: 1.0337578178
+GC Classification: moderate GC content
