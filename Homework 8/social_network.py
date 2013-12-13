@@ -19,11 +19,18 @@ practice_graph = nx.Graph()
 practice_graph.add_node("A")
 practice_graph.add_node("B")
 practice_graph.add_node("C")
-# TODO: Add more here...
+practice_graph.add_node("D")
+practice_graph.add_node("E")
+practice_graph.add_node("F")
 
 practice_graph.add_edge("A", "B")
 practice_graph.add_edge("A", "C")
 practice_graph.add_edge("B", "C")
+practice_graph.add_edge("B", "D")
+practice_graph.add_edge("C", "D")
+practice_graph.add_edge("C", "F")
+practice_graph.add_edge("D", "E")
+practice_graph.add_edge("D", "F")
 # TODO: Add more here...
 
 assert len(practice_graph.nodes()) == 6
@@ -43,7 +50,26 @@ draw_practice_graph()
 ### Problem 1b
 ###
 
-# (Your code goes here.)
+rj = nx.Graph()
+
+rj.add_node("Nurse")
+
+rj.add_node("Capulet")
+rj.add_node("Juliet")
+rj.add_node("Tybalt")
+
+rj.add_node("Benvolio")
+rj.add_node("Montague")
+rj.add_node("Romeo")
+
+rj.add_node("Escalus")
+rj.add_node("Mercutio")
+rj.add_node("Paris")
+
+rj.add_node("Friar")
+
+
+
 
 assert len(rj.nodes()) == 11
 assert len(rj.edges()) == 17
